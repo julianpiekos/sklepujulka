@@ -1,7 +1,29 @@
 body {
     background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
-    color: white;
+    margin-top: 50px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.links img {
+    width: 200px; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.links img:hover {
+    transform: scale(1.1); 
 }
