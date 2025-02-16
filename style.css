@@ -18,8 +18,3 @@ h1 {
     margin: 10px;
 }
 
-.links img {
-    width: 200px; 
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-}
