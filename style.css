@@ -23,7 +23,3 @@ h1 {
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
-
-.links img:hover {
-    transform: scale(1.1); 
-}
