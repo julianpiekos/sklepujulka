@@ -2,7 +2,7 @@ body {
     background-color: black;
     color: white;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: "czcionka";
 }
 
 h1 {
@@ -16,4 +16,8 @@ h1 {
 .links a {
     display: inline-block;
     margin: 10px;
+}
+@font-face{
+    src:"./Roboto_Condensed-BoldItalic";
+    font-family:"czcionka";
 }
