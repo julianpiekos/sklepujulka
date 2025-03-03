@@ -4,17 +4,45 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     cursor: url('kursor.png'), auto;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    margin-top: 50px;
+header h1 {
+    margin-top: 50px; /* Dodany margines, żeby nagłówek miał odpowiednią przestrzeń od góry */
 }
 
 .links {
-    margin-top: 20px;
+    margin-top: 40px; /* Dodany margines do sekcji z linkami */
 }
 
 .links a {
     display: inline-block;
-    margin: 10px;
+    margin: 10px; /* Odstępy między przyciskami */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.links a img {
+    max-width: 100%;
+    height: auto;
+}
+
+.links a:hover {
+    transform: scale(1.1); /* Powiększenie przycisków przy najechaniu */
+    opacity: 0.8; /* Zmniejszenie przezroczystości przy najechaniu */
+}
+
+/* Dostosowanie dla urządzeń mobilnych */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .links {
+        margin-top: 20px;
+    }
+
+    .links a {
+        margin: 5px;
+    }
 }
