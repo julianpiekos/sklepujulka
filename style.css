@@ -18,7 +18,7 @@ header h1 {
 
 .links a {
     display: inline-block;
-    margin: 10px; /* Odstępy między przyciskami */
+    margin: 5px; /* Odstępy między przyciskami */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
