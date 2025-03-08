@@ -16,4 +16,3 @@ function przekieruj() {
     let finalURL = `${formularzURL}?usp=pp_url&${entryID}=${ocenaWartosc}`;
 
     window.location.href = finalURL;
-}
