@@ -3,7 +3,6 @@ body {
     color: white;
     text-align: center;
     font-family: Arial, sans-serif;
-    cursor: url('kursor.png'), auto;
     margin: 0;
     padding: 0;
 }
@@ -30,6 +29,9 @@ header h1 {
 .links a:hover {
     transform: scale(1.1); /* Powiększenie przycisków przy najechaniu */
     opacity: 0.8; /* Zmniejszenie przezroczystości przy najechaniu */
+}
+html {
+    cursor: url('kursor.png'), auto;
 }
 
 /* Dostosowanie dla urządzeń mobilnych */
