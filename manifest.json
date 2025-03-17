@@ -20,7 +20,7 @@
 }
 
 {
-  "name": "Sklep u Julka",
+  "name": "Moja Strona",
   "short_name": "Strona",
   "icons": [
     {
@@ -39,3 +39,4 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff"
 }
+
