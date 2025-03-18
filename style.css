@@ -1,50 +1,98 @@
+/* style.css zrobione przez Janka */
+
+@font-face {
+    font-family: "default";
+    src: url(./SamsungOne-400.ttf);
+}
+
+@media print {
+    /* Hide the button during print */
+    button {
+        display: none;
+    }
+
+    /* Hide everything except for the output */
+    body * {
+        visibility: hidden;
+    }
+
+    #output {
+        visibility: visible;
+        color: black;
+    }
+}
+
 body {
     background-color: black;
+    font-family: "default";
+    justify-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    cursor: none;
     color: white;
+}
+
+#cursor {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+#popup {
+    background-color: gray;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 10px 13px rgb(63, 63, 63);
+    color: white;
+    border-radius: 7px;
+}
+
+#popup p {
+    font-size: 2vh; 
+}
+
+#popup output {
+    font-size: 2vh;
+}
+
+#popup button {
+    padding: 10px 15px;
+    background-color: rgb(105, 105, 105);
+    font-size: 1.7vh;
+    color: white;
+    font-family: "default";
+}
+
+#popup button:hover {
+    background-color: rgb(66, 66, 66);
+    cursor: none;
+}
+
+#popup .c {
+    background-color: white;
+    color: black;
+    width: 2vh;
+    font-size: 2vh;
     text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    border-radius: 100%;
+    font-family: Arial;
 }
 
-header h1 {
-    margin-top: 50px; /* Dodany margines, żeby nagłówek miał odpowiednią przestrzeń od góry */
+#popup input {
+    cursor: none;
 }
 
-.links {
-    margin-top: 40px; /* Dodany margines do sekcji z linkami */
-}
-
-.links a {
-    display: inline-block;
-    margin: 5px; /* Odstępy między przyciskami */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.links a img {
-    max-width: 100%;
-    height: auto;
-}
-
-.links a:hover {
-    transform: scale(1.1); /* Powiększenie przycisków przy najechaniu */
-    opacity: 0.8; /* Zmniejszenie przezroczystości przy najechaniu */
-}
-html {
-    cursor: url('kursor.png'), auto;
-}
-
-/* Dostosowanie dla urządzeń mobilnych */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .links {
-        margin-top: 20px;
-    }
-
-    .links a {
-        margin: 5px;
-    }
+#b {
+    -webkit-user-drag: none;
 }

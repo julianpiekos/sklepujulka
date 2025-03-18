@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "default";
+    src: url(../SamsungOne-400.ttf);
+}
+
+body {
+    background-color: black;
+    font-family: "default";
+    justify-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: white;
+}
+
+#Box {
+    border: 1px solid white;
+    width: 50vw;
+    height: 50vh;
+    padding: 20px 40px;
+}
+
+input {
+    font-size: 2vh;
+    font-family: "default";
+}
+
+h6 {
+    font-weight: normal;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 2vh;
+    border: 1px solid black;
+    background-color: rgb(110, 0, 161);
+    color: white;
+}

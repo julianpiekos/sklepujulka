@@ -1,30 +1,34 @@
+<!-- index.html zrobione przez Janka -->
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="julek">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="192x192" href="ikona192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="ikona180.png">
-    <link rel="manifest" href="manifest.json">
     <meta name="description" content="to jest strona sklepu o nazwie Sklepu u Julka na której są linki do cennika i do rezerwacji produktów">
     <title>Sklep u Julka</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Witaj na stronie Sklepu u Julka</h1>
-    </header>
+    <h1>Witaj na stronie Sklepu u Julka!</h1>
+    <img draggable="false" src="przycisk_cennika.png" id="b" onclick="NoweOkno('https://docs.google.com/spreadsheets/d/1QmAiVpZ9dwjd4z3FBW3o5pQGKRXfqLzfhcFHRD0VNGU/preview')">
+    <img draggable="false" src="przycisk_formularza.png" id="b" onclick="NoweOkno('./rezerwacja/index.html')">
 
-    <main>
-        <section class="links">
-            <a href="https://docs.google.com/spreadsheets/d/1QmAiVpZ9dwjd4z3FBW3o5pQGKRXfqLzfhcFHRD0VNGU/edit?usp=drive_link">
-                <img src="przycisk_cennika.png" alt="przycisk do cennika">
-            </a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSek90oxs6HaXgyWbQayK6Wlurfe9h7R2YewOx59OPIoE2OX9A/viewform?usp=header">
-                <img src="przycisk_formularza.png" alt="przycisk do rezerwacji produktów">
-            </a>
-        </section>
-    </main>
-</body>
+    <img id="cursor" src="./cursor.png">
+
+    <div id="popup">
+        <div class="c" onclick="">x</div>
+        <p>Oceń sklep!</p>
+        <input type="range" id="slider" min="0" max="10" oninput="output.value = this.value">
+        <output id="output">10</output>
+        <br>
+        <button onclick="window.print()">Oceń!</button>
+    </div>
+</body>  
 </html>
+<script>
+    document.querySelector(".c").addEventListener("click",()=>{
+    document.querySelector("#popup").style.display="none"
+})
+</script>
