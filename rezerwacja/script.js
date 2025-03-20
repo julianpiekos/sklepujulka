@@ -30,13 +30,4 @@ function autoF1ll() {
 
 function NoweOkno(url) {
     window.open(url, '_blank', 'width=800,height=600,top=100,left=100');    
-}z
-
-function klikNaLegende() {
-    document.getElementById("LEGEND").style.fontSize = "4vh";
-    setTimeout(cofnijto(), 1000)
-}
-
-function cofnijto() {
-    document.getElementById("")
 }
