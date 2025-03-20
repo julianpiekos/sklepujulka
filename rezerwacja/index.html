@@ -1,4 +1,6 @@
 <!-- Rezerwacja zrobiona przez Janka -->
+<!-- O, przy okazji chodź tu usiądź ze mną przy stoliczku i napij sie herbatki! -->
+<!-- <table>Stoliczek Janka do herbatki!</table> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezerwacja</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <noscript>włącz javascript</noscript>
     <div id="cursor"></div>
     <h1>Rezerwacja produktu</h1>
+    <p style="color: red;">Rezerwacja jest jeszcze w wersji Alpha! Jeśli znajdziesz bugi, powiedz to właścicielowi sklepu!</p>
     <div id="Box">
         <p>Imię i Nazwisko:</p>
         <input id="name" type="text" placeholder="Imię">
@@ -21,39 +26,9 @@
         <button onclick="autoF1ll()">Rezerwuj</button>
     </div>
 </body>
+<legend onclick="klikNaLegende()" id="LEGEND">janek is de best</legend>
 </html>
 <script>
-    // script.js zrobione przez Janka
-    document.addEventListener("DOMContentLoaded", () => {
-        const cursor = document.getElementById("cursor");
-        document.addEventListener("mousemove", (e) => {
-            cursor.style.left = `${e.clientX}px`;
-            cursor.style.top = `${e.clientY}px`;
-        });
-    });
-
-    function autoF1ll() {
-            // Biezemy iNfoLmaCjE Do ZmeNNycHh
-            let name = document.getElementById("name").value;
-            let lastname = document.getElementById("lastname").value;
-            let produkt = document.getElementById("produkt").value;
-
-            // gogle fomr!!
-            let formURL = "https://docs.google.com/forms/d/e/1FAIpQLScN34sEZ-L8b6TeFQL0-G-2g8VVbkRl5K7o6UGJz8-4WAWgxg/viewform";
-            
-            // nuMelki!
-            let entryNameID = "252234179";  // imei!!
-            let entryLastnameID = "170215480";  // nawiskoo!!
-            let entryProduktID = "1663139754";  // plodukt!
-
-            // magia!!
-            let magia = `${formURL}?usp=pp_url&entry.${entryNameID}=${encodeURIComponent(name)}&entry.${entryLastnameID}=${encodeURIComponent(lastname)}&entry.${entryProduktID}=${encodeURIComponent(produkt)}`;
-
-            // bum!!!11!!!!11!!!1!!!1!
-            window.location.href = magia;
-    }
-
-    function NoweOkno(url) {
-        window.open(url, '_blank', 'width=800,height=600,top=100,left=100');    
-    }
+    // nie grzeb w nosie prosię!
+    // A jeśli masz już to robić, idź do Sources i wybierz script.js
 </script>

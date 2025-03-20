@@ -36,3 +36,19 @@ button {
     background-color: rgb(110, 0, 161);
     color: white;
 }
+
+legend {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+noscript {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
