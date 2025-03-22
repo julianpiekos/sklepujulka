@@ -106,3 +106,6 @@ noscript {
     width: 100vw;
     background-color: red;
 }
+html {
+    cursor: url('cursor.png'), auto;
+}
