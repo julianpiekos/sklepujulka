@@ -19,18 +19,7 @@
     <img draggable="false" src="przycisk_cennika.png" id="b" onclick="NoweOkno('https://docs.google.com/spreadsheets/d/1QmAiVpZ9dwjd4z3FBW3o5pQGKRXfqLzfhcFHRD0VNGU/preview')">
     <img draggable="false" src="przycisk_formularza.png" id="b" onclick="NoweOkno('./rezerwacja/index.html')">
 
-    <div id="popup">
-        <div class="c" onclick="">x</div>
-        <p>Oceń sklep!</p>
-        <input type="range" id="slider" min="0" max="10" oninput="output.value = this.value">
-        <output id="output">10</output>
-        <br>
-        <button onclick="window.print()">Oceń!</button>
-    </div>
+
 </body>  
 </html>
-<script>
-    document.querySelector(".c").addEventListener("click",()=>{
-    document.querySelector("#popup").style.display="none"
-})
-</script>
+
