@@ -29,7 +29,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    cursor: none;
+    cursor: none !important;
     color: white;
 }
 
