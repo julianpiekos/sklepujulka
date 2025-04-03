@@ -42,57 +42,6 @@ body {
     z-index: 9999;
 }
 
-#popup {
-    background-color: gray;
-    padding: 10px 20px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    box-shadow: 5px 10px 13px rgb(63, 63, 63);
-    color: white;
-    border-radius: 7px;
-}
-
-#popup p {
-    font-size: 2vh; 
-}
-
-#popup output {
-    font-size: 2vh;
-}
-
-#popup button {
-    padding: 10px 15px;
-    background-color: rgb(105, 105, 105);
-    font-size: 1.7vh;
-    color: white;
-    font-family: "default";
-}
-
-#popup button:hover {
-    background-color: rgb(66, 66, 66);
-    cursor: none;
-}
-
-#popup .c {
-    background-color: white;
-    color: black;
-    width: 2vh;
-    font-size: 2vh;
-    text-align: center;
-    position: absolute;
-    right: 7px;
-    top: 7px;
-    border-radius: 100%;
-    font-family: Arial;
-}
-
-#popup input {
-    cursor: none;
-}
-
 #b {
     -webkit-user-drag: none;
 }
