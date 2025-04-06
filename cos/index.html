@@ -19,15 +19,22 @@
         body {
             background-color: black;
         }
+
+        [data-dymek]:hover::after {
+            content: attr(data-dymek);
+            position: absolute;
+            padding: 10px;
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
     <h1>Niespodzianka!</h1> <br>
-    <h1>6</h1>
-    <h2>5</h2>
-    <h3>4</h3>
-    <h4>3</h4>
-    <h5>2</h5>
-    <h6>1</h6>
+    <h1 data-dymek="6">6</h1>
+    <h2 data-dymek="5">5</h2>
+    <h3 data-dymek="4">4</h3>
+    <h4 data-dymek="3">3</h4>
+    <h5 data-dymek="2">2</h5>
+    <h6 data-dymek="1">1</h6>
 </body>
 </html>
