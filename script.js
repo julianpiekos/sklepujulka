@@ -12,3 +12,5 @@ document.addEventListener("DOMContentLoaded", () => {
 function NoweOkno(url) {
     window.open(url, '_blank', 'width=800,height=600,top=100,left=100');
 }
+
+console.log("pliki strony: https://github.com/julianpiekos/sklepujulka/");
