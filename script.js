@@ -14,3 +14,8 @@ function NoweOkno(url) {
 }
 
 console.log("pliki strony: https://github.com/julianpiekos/sklepujulka/");
+
+function znikanie_strony() {
+    document.body.innerHTML = '';
+    document.title = 'Document';
+}
