@@ -61,3 +61,15 @@ noscript {
     display: none;
   }
 }
+
+[onclick="znikanie_strony()"] {
+    display: block;
+    text-decoration: none;
+    cursor: auto;
+    color: black;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
